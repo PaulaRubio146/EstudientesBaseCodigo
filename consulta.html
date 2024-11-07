@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/consulta.css">
+    <title>Consulta de Estudiantes</title>
+</head>
+<body>
+    <h1>Consulta de Estudiantes</h1>
+    <table border="1">
+        <tr>
+            <th>Cédula</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Dirección Residencia</th>
+            <th>Dirección Trabajo</th>
+            <th>Distancia (m)</th>
+        </tr>
+        {% for estudiante in estudiantes %}
+        <tr>
+            <td>{{ estudiante.cedula }}</td>
+            <td>{{ estudiante.nombres }}</td>
+            <td>{{ estudiante.apellidos }}</td>
+            <td>{{ estudiante.direccion_residencia }}</td>
+            <td>{{ estudiante.direccion_trabajo }}</td>
+            <td>{{ estudiante.distance }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Título de la página */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 90%; /* Tabla ocupa el 90% del ancho de la pantalla */
+    max-width: 1200px; /* Limitar a un ancho máximo */
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Fondo y color de las cabeceras */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para filas pares de la tabla */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para las filas al pasar el mouse */
+tr:hover {
+    background-color: #ddd;
+}
+
+
